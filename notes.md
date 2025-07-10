@@ -18,6 +18,74 @@ Zuverlässigkeit
 
 </details>
 
+# Testing
+
+<details>
+
+<summary>Bug (verschiedene Bedeutungen)</summary>
+
+- Mistake: “a human act or **decision** resulting in an error”
+- Defect (bug): “an error in the program code” → **static**
+- Fault: “an error in the program state” → **dynamic**
+- Failure: “an externally **visible** error in the program behavior”
+</details>
+
+<details>
+
+<summary>Testing vs. Debugging / Validation vs. Verification</summary>
+
+- Testing: Nachweis, dass ein Fehler existiert (z.B. durch fehlschlagenden Test)
+- Debugging: Lokalisieren und Beheben dieses Fehlers im Code
+- Verification: Bauen wir das Produkt **richtig**? - Prüfung gegen Spezifikation
+- Validation: Bauen wir das **richtige Produkt**? – Prüfung gegen Anforderungen
+</details>
+
+<details>
+
+<summary>Unit vs. Integration vs. System vs. User Test</summary>
+
+![alt text](./images/unittest.png)
+</details>
+
+<details>
+<summary>Test Fixtures</summary>
+
+- preparing a fixed state/environment
+</details>
+
+<details>
+<summary>Test Doubles</summary>
+
+- isolating a class or component for testing
+- Dummy — "болванка"
+- Fake — "упрощённая копия"
+- Stub — "предсказуемый ответ"
+- Spy — "наблюдатель"
+- Mock — "проверяющий и реагирующий"
+</details>
+
+<details>
+<summary>Black Box vs. Glass Box Testing</summary>
+
+- Black Box:
+    - no info about code
+    - nur Eingaben und Ausgaben werden betrachtet
+- Glass Box:
+    - we know code
+    - Ziel: alle Pfade, Zweige, Anweisungen abdecken
+</details>
+
+<details>
+<summary>Coverage-Kriterien</summary>
+
+- Statement Coverage (Anweisungsüberdeckung)
+- Branch Coverage (Zweigüberdeckung)
+- Path Coverage (Pfadüberdeckung)
+- Condition Coverage
+- → Berechnung: Anzahl erfüllter Elemente ÷ Gesamtanzahl × 100 %
+
+</details>
+
 # Modeling
 [UML-Notationsübersicht](./images/UML-Notationsübersicht-2.5.pdf)
 <details>
@@ -89,7 +157,7 @@ obj1.doSomething();
 
 - Prescriptive: vor der Implementierung; **wie** ein System gebaut werden soll; Design, Requirements Engineering
 - Descriptive: nach der I; wie ein System **bereits ist**; Analyse, Dokumentation
-    - Domain Model = what should be **included** in the system and what is **restricted**\
+    - **Domain Model** = what should be **included** in the system and what is **restricted**\
     Nutzt UML-Klassendiagramme, aber **ohne technische Details** -> verständlicher für Kunde
         - Object Design (Objektentwurf) = Technisches Design, wie Klassen zusammenarbeiten\
         konzentriert sich auf Klassenstruktur und Schnittstellen
