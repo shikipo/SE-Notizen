@@ -30,6 +30,8 @@ Zuverlässigkeit
 - Failure: “an externally **visible** error in the program behavior”
 </details>
 
+---
+
 <details>
 
 <summary>Testing vs. Debugging / Validation vs. Verification</summary>
@@ -40,6 +42,8 @@ Zuverlässigkeit
 - Validation: Bauen wir das **richtige Produkt**? – Prüfung gegen Anforderungen
 </details>
 
+---
+
 <details>
 
 <summary>Unit vs. Integration vs. System vs. User Test</summary>
@@ -47,11 +51,15 @@ Zuverlässigkeit
 ![alt text](./images/unittest.png)
 </details>
 
+---
+
 <details>
 <summary>Test Fixtures</summary>
 
 - preparing a fixed state/environment
 </details>
+
+---
 
 <details>
 <summary>Test Doubles</summary>
@@ -64,6 +72,8 @@ Zuverlässigkeit
 - Mock — "проверяющий и реагирующий"
 </details>
 
+---
+
 <details>
 <summary>Black Box vs. Glass Box Testing</summary>
 
@@ -74,6 +84,8 @@ Zuverlässigkeit
     - we know code
     - Ziel: alle Pfade, Zweige, Anweisungen abdecken
 </details>
+
+---
 
 <details>
 <summary>Coverage-Kriterien</summary>
