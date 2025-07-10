@@ -18,7 +18,86 @@ Zuverlässigkeit
 
 </details>
 
+# Code Reviews
+
+<details>
+
+<summary>Code Reviews (goal, pro, cons)</summary>
+
+![alt text](./images/pair_pr.png)\
+Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programming*)
+
+- +:
+    - Höhere Codequalität und Fehlervorbeugung
+    - Wissenstransfer im Team
+    - Gemeinsame Verantwortung für Code
+- -:
+    - Langsame Rückmeldung
+    - Zu große Codeänderungen auf einmal
+    - Konflikte im Review-Prozess
+    - Aufwand für Reviewer (Zeit, Aufmerksamkeit)
+
+</details>
+
+---
+
+<details>
+
+<summary>Pull/Merge vs. Instant Reviews</summary>
+
+- **Instant Reviews**: direkter und interaktiver, z. B. Pair Programming
+- **PR-/MR-Reviews**: über Pull/Merge Requests, dokumentiert, besser für größere Teams
+![alt text](./images/pr_mr_rew.png)
+</details>
+
+---
+
+<details>
+
+<summary>Essentielle vs. Akzidentelle Komplexität</summary>
+
+- **Essentielle Komplexität**: ergibt sich aus der Natur des Problems (z. B. Mathe-Formel)
+- **Akzidentelle Komplexität**: entsteht durch schlechte Architektur, fehlende Dokumentation\
+→ Ziel: akzidentelle Komplexität minimieren
+
+</details>
+
+---
+
+<details>
+
+<summary>Top-down vs. Bottom-up Codeverständnis</summary>
+
+- **Top-down**: Startet mit Vorwissen und Hypothesen → prüft durch Code-Analyse
+- **Bottom-up**: Kein Vorwissen → Schrittweise Analyse von Code
+
+</details>
+
+---
+
+<details>
+
+<summary>Permissive vs. Copyleft Lizenzen</summary>
+
+- **Permissive**: Erlaubt **private** Nutzung, Änderungen ohne Offenlegung (z. B. MIT, BSD, Apache)
+- **Copyleft**: Änderungen müssen offen bleiben, open-source (z. B. GPL, CC BY-SA)
+
+</details>
+
+---
+
+<details>
+
+<summary>open-source vs. inner-source</summary>
+
+- open-source: код открыт для всех
+- inner-source: код открыт для сотрудников внутри компании
+
+</details>
+
 # Testing
+
+⚠️ Branch Covering
 
 <details>
 
@@ -80,6 +159,8 @@ Zuverlässigkeit
 - Black Box:
     - no info about code
     - nur Eingaben und Ausgaben werden betrachtet
+    - Ziel: Äquivalenzklassen (Gruppe), Grenzwertanalyse
+
 - Glass Box:
     - we know code
     - Ziel: alle Pfade, Zweige, Anweisungen abdecken
@@ -97,6 +178,31 @@ Zuverlässigkeit
 - → Berechnung: Anzahl erfüllter Elemente ÷ Gesamtanzahl × 100 %
 
 </details>
+
+---
+
+<details>
+<summary>Warum 100 % Coverage unrealistisch ist und keine Garantie fehlerhafter Software</summary>
+
+- Fehler sind nicht immer in Pfaden unrealistisch oder schwer erreichbar
+</details>
+
+---
+
+<details>
+<summary>Test-Driven Development (TDD)</summary>
+
+![alt text](./images/tdd.gif)
+
+Prinzipien:
+- Nur **so viel Code** schreiben, **wie nötig**, um Fehler zu vermeiden
+- Sauberes **Refactoring**
+
+Vorteile:
+- Bessere **Testabdeckung**
+- Frühe **Fehlererkennung**
+</details>
+
 
 # Modeling
 [UML-Notationsübersicht](./images/UML-Notationsübersicht-2.5.pdf)
