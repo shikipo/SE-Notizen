@@ -115,12 +115,16 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 
 <details>
 
-<summary>Testing vs. Debugging / Validation vs. Verification</summary>
+<summary>Testing vs. Debugging / Validation vs. Verification vs. Evaluation</summary>
 
 - Testing: Nachweis, dass ein Fehler existiert (z.B. durch fehlschlagenden Test)
 - Debugging: Lokalisieren und Beheben dieses Fehlers im Code
-- Verification: Bauen wir das Produkt **richtig**? - Prüfung gegen Spezifikation
+
+- Verification: Bauen wir das Produkt **richtig**? - Prüfung gegen Spezifikation\
+    Проверяем, работает ли кнопка «Login» технически правильно (логин передаётся, ответ получен)
 - Validation: Bauen wir das **richtige Produkt**? – Prüfung gegen Anforderungen
+- Evaluation: Ist das System **nützlich** oder gut? - Prüfung mit echten Nutzer\
+    Спрашиваем пользователя, удобно ли ему пользоваться кнопкой, понятна ли она, нужное ли место.
 </details>
 
 ---
