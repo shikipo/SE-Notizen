@@ -1,5 +1,11 @@
 <details>
-<summary>Graph</summary>
+<summary>Учить</summary>
+
+- Defendency Injection vs Liskov
+- High Coupling vs Loose Coupling (+ Beispielen)
+- Dependency Inversion
+- Inversion of Control
+
 
 # Something
 
