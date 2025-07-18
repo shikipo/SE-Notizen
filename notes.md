@@ -766,8 +766,8 @@ A → C → E = 3+4+1 = 8 Tage → nicht kritisch
 <details>
 <summary>scalability vs. elasticity</summary>
 
-**Scalability**: Fähigkeit, mehr **physisch** Ressourcen zu erhöhen, z. B. durch Hinzufügen von Ressourcen (mehr CPUs, mehr Server)\
-**Elasticity**: Fähigkeit, **dynamisch** Ressourcen zu erhöhen oder zu reduzieren, je nach Bedarf
+**Scalability** bedeutet, dass ein System **überhaupt wachsen kann** (z. B. horizontal/vertikal), aber **nicht zwingend automatisch**\
+**Elasticity** bedeutet, **inwieweit** eine Cloud-Schicht autonom ihre Kapazität an die Arbeitslast aber die Zeit anpasst.
 
 </details>
 
@@ -783,8 +783,9 @@ A → C → E = 3+4+1 = 8 Tage → nicht kritisch
 
 
 <details>
-<summary>Docker vs. Kubernetes</summary>
+<summary>Container vs. Docker vs. Kubernetes</summary>
 
+**Container**: ein leichtgewichtiges, eigenständiges Software-Paket, das Code, Laufzeit und Abhängigkeiten beinhaltet
 **Docker**: Verpackt Anwendungen in Container (mit allen Abhängigkeiten) → überall lauffähig\
 **Kubernetes**: Orchestriert und verwaltet viele Container → Skalierung, Load Balancing, Selbstheilung
 </details>
