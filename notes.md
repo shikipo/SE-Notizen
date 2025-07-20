@@ -24,9 +24,35 @@ Zuverlässigkeit
 
 </details>
 
-# Code Reviews
+# Documentation
 
-что-то
+<details> <summary>Architekturdiagramme</summary>
+
+<img src="./images/architecture.png" alt="Klassendiagramm" width="400"/>
+
+→ In CampusCoffee realisiert über Maven-Submodule
+</details> <details> <summary>Documentation as Code</summary>
+
+- Konzept: Dokumentation = Teil des Codes
+    - Formate: Markdown
+    - Tools: Git, Linter
+
+</details> <details> <summary>Dokumentationsartefakte vs. Architekturelle Entscheidungen</summary>
+
+- **Dokumentationsartefakte** = z. B. UML-Diagramme, Paketstrukturen, Code-Kommentare
+- **Architekturelle Entscheidungen (ADRs)** = z. B. Microservices statt Monolith\
+→ ADRs sind entscheidungsorientiert, Artefakte zustandsorientiert
+
+</details> <details> <summary>Zweck von ADRs (Architectural Decision Records)</summary>
+
+- Ziel: Dokumentation von Entscheidungen, die beeinflussen:
+    - Architekturstruktur
+    - Softwarequalität
+    - Schnittstellen
+→ z. B. Entscheidung für Microservices statt Monolith
+</details>
+
+# Code Reviews
 
 <details>
 
@@ -47,7 +73,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 
 </details>
 
----
 
 <details>
 
@@ -58,7 +83,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 ![alt text](./images/pr_mr_rew.png)
 </details>
 
----
 
 <details>
 
@@ -70,7 +94,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 
 </details>
 
----
 
 <details>
 
@@ -81,7 +104,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 
 </details>
 
----
 
 <details>
 
@@ -92,7 +114,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 
 </details>
 
----
 
 <details>
 
@@ -117,7 +138,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 - Failure: “an externally **visible** error in the program behavior”
 </details>
 
----
 
 <details>
 
@@ -133,7 +153,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
     Спрашиваем пользователя, удобно ли ему пользоваться кнопкой, понятна ли она, нужное ли место.
 </details>
 
----
 
 <details>
 
@@ -142,7 +161,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 ![alt text](./images/unittest.png)
 </details>
 
----
 
 <details>
 <summary>Test Fixtures</summary>
@@ -150,7 +168,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 - preparing a fixed state/environment
 </details>
 
----
 
 <details>
 <summary>Test Doubles</summary>
@@ -163,7 +180,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 - Mock — "проверяющий и реагирующий"
 </details>
 
----
 
 <details>
 <summary>Black Box vs. Glass Box Testing</summary>
@@ -178,7 +194,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
     - Ziel: alle Pfade, Zweige, Anweisungen abdecken
 </details>
 
----
 
 <details>
 <summary>Coverage-Kriterien</summary>
@@ -191,7 +206,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 
 </details>
 
----
 
 <details>
 <summary>Warum 100 % Coverage unrealistisch ist und keine Garantie fehlerhafter Software</summary>
@@ -199,7 +213,6 @@ Ziel: Konzentration auf Qualität, Probleme und Zusammenarbeit (*Pair Programmin
 - Fehler sind nicht immer in Pfaden unrealistisch oder schwer erreichbar
 </details>
 
----
 
 <details>
 <summary>Test-Driven Development (TDD)</summary>
@@ -226,7 +239,6 @@ Vorteile:
 - Diagramm = **grafische** Darstellung eines Teils dieses Modells (z. B. Klassendiagramm)
 </details>
 
----
 
 <details>
 <summary>Zweck von Modellen</summary>
@@ -236,7 +248,6 @@ Vorteile:
 - Dokumentation des Systemdesigns
 </details>
 
----
 
 <details>
 <summary>Types of Models</summary>
@@ -246,7 +257,6 @@ Vorteile:
 - Static vs. Dynamic
 </details>
 
----
 
 <details>
 <summary>OOM: Core Elements</summary>
@@ -271,7 +281,6 @@ obj1.doSomething();
 ```
 </details>
 
----
 
 <details>
 <summary>statische vs. dynamische Modell</summary>
@@ -280,7 +289,6 @@ obj1.doSomething();
 - Dynamisch: beschreibt das **Verhalten über die Zeit** (z. B. Zustände, Aktivitäten, Nachrichten)
 </details>
 
----
 
 <details>
 <summary>Prescriptive vs. Descriptive Model</summary>
@@ -296,7 +304,6 @@ obj1.doSomething();
         - Domain-Driven Design (DDD) = Fachsprache + Struktur
 </details>
 
----
 
 <details>
 <summary>UML-Diagramm: Klassen</summary>
@@ -313,7 +320,6 @@ obj1.doSomething();
 ![alt text](./images/use_case.png)
 </details>
 
----
 
 <details>
 <summary>Aggregation vs. Komposition</summary>
@@ -325,7 +331,6 @@ obj1.doSomething();
 <img src="./images/com_ex.png" alt="alt text" width="200"/>
 </details>
 
----
 
 <details>
 <summary>Constraints and Assertions</summary>
@@ -346,7 +351,6 @@ obj1.doSomething();
 - Extern: Zuverlässigkeit, Performance, Usability, Sicherheit, Portabilität
 </details>
 
----
 
 <details>
 <summary>SOLID</summary>
@@ -359,7 +363,6 @@ zu ändern
 - Dependency Inversion – Abhängigkeiten von Interfaces, nicht von konkreten Klassen (da leicht testbar)
 </details>
 
----
 
 <details>
 <summary>Motivation hinter SOLID</summary>
@@ -373,7 +376,6 @@ zu ändern
     ![alt text](./images/cohesion_coupling.png)
 </details>
 
----
 
 <details>
 <summary>Vererbung vs. Delegation</summary>
@@ -396,7 +398,6 @@ class Manager {
 ➡️ Manager hat einen Worker (has-a)
 </details>
 
----
 
 <details>
 <summary>Design Pattern: Categories</summary>
@@ -415,7 +416,6 @@ class Manager {
     - Monitor - kontrollierter Zugriff auf Ressourcen
 </details>
 
----
 
 <details>
 <summary>Factory (in creational pattern)</summary>
@@ -440,7 +440,6 @@ public static Button createButton() {
 - Testbarkeit
 </details>
 
----
 
 <details>
 <summary>Singleton Pattern or Antipattern</summary>
@@ -480,7 +479,6 @@ public static Button createButton() {
 - Performance und Usability sollen verbessert werden
 </details>
 
----
 
 <details>
 <summary>Änderungsmanagement in traditionellen vs. agilen Projekten</summary>
@@ -494,7 +492,6 @@ public static Button createButton() {
     - Fokus auf schnelle Reaktion statt Planung
 </details>
 
----
 
 <details>
 <summary>Evolution vs. Maintenance</summary>
@@ -503,7 +500,6 @@ public static Button createButton() {
 - Evolution: Kontinuierliche Weiterentwicklung und Verbesserung
 </details>
 
----
 
 <details>
 <summary>Metapher der technischen Schulden</summary>
@@ -524,7 +520,6 @@ Wie bei finanziellen Schulden:
 
 </details>
 
----
 
 <details>
 <summary>Refactoring vs. Reengineering</summary>
@@ -535,7 +530,6 @@ Wie bei finanziellen Schulden:
 ⭐ Refactoring ist kontinuierlich, Reengineering eher punktuell und aufwendig.
 </details>
 
----
 
 <details>
 <summary>Anti-Pattern</summary>
@@ -546,7 +540,6 @@ Wie bei finanziellen Schulden:
 Lösung: Verantwortlichkeiten gleichmäßiger verteilen (z. B. durch Refactoring).
 </details>
 
----
 
 <details>
 <summary>Code Smell</summary>
@@ -557,7 +550,6 @@ Lösung: Verantwortlichkeiten gleichmäßiger verteilen (z. B. durch Refactori
 Lösung: Aufteilen in kleinere, logisch getrennte Methoden.
 </details>
 
----
 
 <details>
 <summary>Anti-Pattern vs. Code Smell</summary>
@@ -575,7 +567,6 @@ Lösung: Aufteilen in kleinere, logisch getrennte Methoden.
 - Metric = Measures interpretiert und kombiniert, um abstrakte Eigenschaften zu bewerten (z. B. Wartbarkeit)
 </details>
 
----
 
 <details>
 <summary>Warum quantitative MM als Ziel problematisch sind?</summary>
@@ -595,7 +586,6 @@ Entwickler optimieren auf die Zahl, nicht auf das Ergebnis.
 ⭐ Metriken lieber **zur Beobachtung und Analyse** verwenden – nicht als starre Ziele.
 </details>
 
----
 
 <details>
 <summary>quantitative vs. qualitative Daten</summary>
@@ -609,7 +599,6 @@ Entwickler optimieren auf die Zahl, nicht auf das Ergebnis.
 - **Erkenntnisse**: Qualitativ zeigt oft das „Warum“, quantitativ das „Was“.
 </details>
 
----
 
 <details>
 <summary>Komplexität und Größe von MM</summary>
@@ -625,7 +614,6 @@ Ein Programm kann strukturell komplex, aber trotzdem leicht verständlich sein �
 ⭐ Metriken sind nützlich, sollten aber **nicht blind vertraut**, sondern **im Kontext interpretiert** werden.
 </details>
 
----
 
 <details>
 <summary>Halstead- und McCabe-Metriken berechnen (für Java-Methoden)</summary>
@@ -642,7 +630,6 @@ Ein Programm kann strukturell komplex, aber trotzdem leicht verständlich sein �
     - Je höher der Wert, desto höher das *Fehlerrisiko* und desto *aufwändiger die Tests*
 </details>
 
----
 
 <details>
 <summary>levels of measurement (“Skalenniveau”)</summary>
@@ -653,7 +640,6 @@ Ein Programm kann strukturell komplex, aber trotzdem leicht verständlich sein �
 - Ratio = +true zero (weight of luggage).
 </details>
 
----
 
 <details>
 <summary>Big Data vs. Thick Data</summary>
@@ -699,7 +685,6 @@ Ideal ist eine Kombination beider Ansätze.
 
 </details>
 
----
 
 <details>
 <summary>Scrum: Arbeitsorganisation</summary>
@@ -711,7 +696,6 @@ Ideal ist eine Kombination beider Ansätze.
 
 </details>
 
----
 
 <details>
 <summary>Product Backlog Items</summary>
@@ -725,7 +709,6 @@ Ideal ist eine Kombination beider Ansätze.
 ++ **Backlog Grooming/Story Time** - Goal: Having a collection of small, **well-understood stories** at the top of the product backlog
 </details>
 
----
 
 <details>
 <summary>Sprint Planning</summary>
@@ -736,7 +719,6 @@ Ideal ist eine Kombination beider Ansätze.
 
 </details>
 
----
 
 <details>
 <summary>Definition of Done (DoD) vs. Definition of Ready (DoR)</summary>
@@ -752,7 +734,6 @@ Ideal ist eine Kombination beider Ansätze.
 ![alt text](./images/dod_dor2.jpeg)
 </details>
 
----
 
 <details>
 <summary>Aufwandsschätzung (effort estimation) & Aktivitätsplanung (activity planning)</summary>
@@ -769,7 +750,6 @@ Ideal ist eine Kombination beider Ansätze.
 
 </details>
 
----
 
 <details>
 <summary>Gantt-Diagramm</summary>
@@ -785,4 +765,54 @@ Kritischer Pfad:\
 A → B → D = 3+2+5 = 10 Tage\
 A → C → E = 3+4+1 = 8 Tage → nicht kritisch
 
+</details>
+
+# Cloud
+
+<details>
+<summary>scalability vs. elasticity</summary>
+
+**Scalability** bedeutet, dass ein System **überhaupt wachsen kann** (z. B. horizontal/vertikal), aber **nicht zwingend automatisch**\
+**Elasticity** bedeutet, **inwieweit** eine Cloud-Schicht autonom ihre Kapazität an die Arbeitslast aber die Zeit anpasst.
+
+</details>
+
+
+<details>
+<summary>billing approaches</summary>
+
+- Pay-as-you-go: Nur bezahlen, was man nutzt
+- Subscription-based billing: flat rate, 1-3 years
+- Hybrid approaches
+- Special offers: Free-Tier
+</details>
+
+
+<details>
+<summary>Container vs. Docker vs. Kubernetes</summary>
+
+**Container**: ein leichtgewichtiges, eigenständiges Software-Paket, das Code, Laufzeit und Abhängigkeiten beinhaltet
+**Docker**: Verpackt Anwendungen in Container (mit allen Abhängigkeiten) → überall lauffähig\
+**Kubernetes**: Orchestriert und verwaltet viele Container → Skalierung, Load Balancing, Selbstheilung
+</details>
+
+
+<details>
+<summary>Testcontainers</summary>
+
+- 🧪 Что делает Testcontainers?
+    - Запускает реальные сервисы (например, PostgreSQL, Redis, Kafka) в Docker-контейнерах
+    - Используется в юнит-тестах и интеграционных тестах
+    - Контейнер автоматически стартует перед тестом и удаляется после него
+- 🧪 Vorteil von Testcontainers
+    - **Realistische Tests** mit echten Datenbanken in Containern
+    - Besser als In-Memory-DBs, weil **Verhalten näher an Produktion**
+    - **Automatisiertes Setup** und **Cleanup pro Test**
+</details>
+
+
+<details>
+<summary>⚠️ Maven Default Lifecycle</summary>
+
+![alt text](./images/lifecycle.png)\
 </details>
