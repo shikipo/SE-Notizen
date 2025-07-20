@@ -1,29 +1,3 @@
-<details>
-<summary>Учить</summary>
-
-- Defendency Injection vs Liskov
-- High Coupling vs Loose Coupling (+ Beispielen)
-- Dependency Inversion
-- Inversion of Control
-
-
-# Something
-
-> \
-> GradHardw\
-> y\
-> ss
-
-- [ ] GradHardw DokuchaevaLiliia BoldakovDmytro KonnektZuferl
-    - Grad - max. число соседей
-    - Hardwareaufwand
-
-Kantenkonnektivität - `min`\
-_Netzwerk unterbrechen_<br>
-Zuverlässigkeit
-
-</details>
-
 # Documentation
 
 <details> <summary>Architekturdiagramme</summary>
